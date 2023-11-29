@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Fagundes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7993da10b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div  id="header">
+        <div class="container">
+            <nav>
+                <img src="images/fagundes.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Dev Front-End</p>
+                <h1>Gabriel Del Gaudio <br> <span>Fagundes</span></h1>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--     Sobre   -->
+    <div id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="sobre-col-1">
+                    <img src="images/bg3.png" alt="">
+                </div>
+                <div class="sobre-col-2">
+                    <h1 class="sub-title">Sobre mim</h1>
+                    <p>Sou um estudante de 23 anos, apaixonado por tecnologia e atualmente cursando Análise e Desenvolvimento de Sistemas na Universidade Positivo, em Curitiba <br>
+                        <span style="color: #ff004f;">Interesses e Hobbies: </span>Jogos online, Desenvolvimento voltado a mídias como Streaming etc... 
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('habilidades')">Habilidades</p>
+                        <p class="tab-links" onclick="opentab('experiencia')">Curiosidades</p>
+                        <p class="tab-links" onclick="opentab('formacao')">Formação</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="habilidades">
+                        <ul>
+                            <li><span>C</span><br>Programação em C</li>
+                            <li><span>Java</span><br>Programação em Java</li>
+                            <li><span>Web</span><br>Desenvolvimento Web</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiencia">
+                        <ul>
+                            <li><span>Experiências</span><br>Não há</li>
+                            <li><span>Leituras:</span><br>Código Limpo - Livro por Robert Cecil Martin <br> Entendendo Algoritmos - Livro por Aditya Y. Bhargava</li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="formacao">
+                        <ul>
+                            <li><span>2023-2024</span><br>Análise e Desenvolvimente de Sistemas - Universidade Positivo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--         Serviços          -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Serviços</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Desenvolvimento Web</h2>
+                    <p>Desenvolvimento web envolve a criação de sites e aplicativos online, integrando habilidades de programação, design e gerenciamento de bancos de dados para criar experiências interativas e funcionais na web.</p>
+                    <a href="#">Veja mais</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-c"></i>
+                    <h2>Programação em C</h2>
+                    <p>A programação em C é reconhecida por sua versatilidade e eficiência, sendo amplamente empregada no desenvolvimento de sistemas e aplicativos. Sua capacidade de controle direto sobre o hardware possibilita a criação de programas rápidos e otimizados, tornando-a uma escolha essencial para uma variedade de projetos, desde sistemas embarcados até grandes softwares.</p>
+                    <a href="#">Veja mais</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Programação em Java</h2>
+                    <p>A programação em Java destaca-se pela sua portabilidade e flexibilidade, sendo uma linguagem amplamente utilizada no desenvolvimento de aplicativos corporativos, sistemas distribuídos e aplicações para a web.</p>
+                    <a href="#">Veja mais</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------- Portfolio ----------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projetos</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Projeto 1</h3>
+                        <p>Em breve</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Projeto 2</h3>
+                        <p>Em breve</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Projeto 3</h3>
+                        <p>Em breve</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn" >Veja mais</a>
+        </div>
+    </div>   
+
+<!-------------------Contato---------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contato</h1>
+                <p><i class="fa-regular fa-envelope"></i> gabrieldgfagundes@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 00-00000-0000</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/gabefagundez/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/gabrielfagundezz/"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gabriel-del-gaudio-fagundes-485a081ab/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="" class="btn btn2">Baixar CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu Email" required>
+                    <textarea name="Message" rows="6" placeholder="Sua Mensagem"></textarea>
+                    <button type="submit" class="btn btn2" style="cursor: pointer;" >Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Feito por Gabriel Fagundes</p>
+    </div>
+
+</div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
